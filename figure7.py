@@ -16,7 +16,8 @@ import matplotlib.gridspec as gridspec
 
 def set_style():
     matplotlib.style.reload_library()
-    plt.style.use(['seaborn-ticks', 'seaborn-paper-custom'])
+#    plt.style.use(['seaborn-ticks', 'seaborn-paper-custom'])
+    plt.style.use(['seaborn-ticks'])
     matplotlib.rc("font", family="Arial")
 
 
