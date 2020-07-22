@@ -139,7 +139,7 @@ if __name__ == '__main__':
                     dat[i,3],dat[i,4] = dst.duration(syn.Ca,syn.dt)
                 
                 np.savetxt(fnams[2*k+j]+'.txt',dat,header="distance weight ca tltp tltd",comments='')            
-                print fnams[2*k+j]+'.txt'
+                print(fnams[2*k+j]+'.txt')
             if j%2: #Pre-Post
                 ax[0].plot(dat[:,0],1000*dat[:,3],shape[k],color='k',label=labels[k])
                 ax[2].plot(dat[:,0],1000*dat[:,4],shape[k],color='k',label=labels[k])

@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from __future__ import print_function, division
+
 """
 Script to Run GABA Variation of Constrained Upstate.
 For each variation, edit the PSim_ConstrainUp_GABA.g" file

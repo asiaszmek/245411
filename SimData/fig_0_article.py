@@ -36,7 +36,7 @@ if __name__ == '__main__':
         
         elif line.startswith('/plot'):
             curr = str(int(float(line.split(' ')[-2])*1000))+' pA'
-            print curr
+            print(curr)
         else:
             
             data.append([float(line.split()[0]),float(line.split()[1])])

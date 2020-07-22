@@ -1,3 +1,4 @@
+from __future__ import print_function, division
 import numpy as np
 import make_timetables as mp
 import subprocess
@@ -95,7 +96,7 @@ if __name__ == '__main__':
         spines = mp.find_string(params,'whichSpines','Pre')
         stim_start = mp.find_value(params,'initSim','Pre')
         too_fast = mp.find_value(params,'TooFast','Pre')
-        print gabaYesNo, spines, stim_start, too_fast
+        print(gabaYesNo, spines, stim_start, too_fast)
         protocols = ['InOut/Fino.g']#,'InOut/1_AP.g']
         timings = ['Pre','Post']
         paradigm_names = ['Fino']#,'1_AP']
@@ -109,7 +110,7 @@ if __name__ == '__main__':
                 burstfreq = mp.find_value(text, 'burstFreq',timing)
                 ntrains = mp.find_value(text, 'numtrains',timing)
                 trainfreq = mp.find_value(text, 'trainFreq',timing)
-                print freq, npulses, nbursts, burstfreq, ntrains, trainfreq
+                print(freq, npulses, nbursts, burstfreq, ntrains, trainfreq)
                 if npulses == None:
                     npulses = 1
             
@@ -132,7 +133,7 @@ if __name__ == '__main__':
                     spine_list = ['']
                     fname_base = paradigm_names[i]+'_'+timing+'_gaba'
                     dela = mp.find_value(mp.read_file('MScell/SynParamsCtx.g'),'GABAdelay =','')
-                    print delay, dela
+                    print(delay, dela)
                     mp.distribute(freq,npulses,burstfreq,nbursts,trainfreq,ntrains,stim_start+delay,fname_base,spine_list)
                 sim_file = sim_name+'_'+paradigm_names[i]+'_timing_'+timing+'_gaba_delay_'+str(delay)+'.g'
                 fil = open(sim_file,'w')

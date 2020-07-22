@@ -35,7 +35,6 @@ def duration(data,dt):
             if how_long_lo > 0:
                 how_longlo.append(how_long_lo)
                 how_long_lo = 0
-    print how_longhi, how_longlo
     if how_longhi == []:
         m_how_longhi = 0
     else:
@@ -66,7 +65,7 @@ if __name__ == '__main__':
         fnames.sort()
         res = np.zeros((len(fnames),5))
         for i,fname in enumerate(fnames):
-            print fname
+            print(fname)
             res[i,0] = find_isi(fname)
             f = open(fname)
             header = f.readline().split()
@@ -80,5 +79,5 @@ if __name__ == '__main__':
             res[i,3] = long_hi
             res[i,4] = long_lo
         #print res
-        print fname_base+'s.txt'
+        print(fname_base+'s.txt')
         np.savetxt(fname_base+'s.txt',res,comments='',header='ISI weight')

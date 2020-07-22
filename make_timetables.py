@@ -25,14 +25,14 @@ def extract_string(subtext,what):
     subtext = subtext.split('=')
     h_string = subtext[1].strip()
     if '"' not in h_string:
-        print 'No string'
+        print('No string')
         return
     return h_string.split('"')[1]
 
 def find_value(text, what,timing):
     subtext = text.split(what)
     if len(subtext) == 1:
-        print 'Could not find', what
+        print('Could not find', what)
         return 
     if len(subtext) == 2:
         return extract(subtext[-1],what)
@@ -58,7 +58,7 @@ def find_value(text, what,timing):
 def find_string(text,what,timing):
     subtext = text.split(what)
     if len(subtext) == 1:
-        print 'Could not find', what
+        print('Could not find', what)
         return 
     if len(subtext) == 2:
         return extract_string(subtext[-1],what)
@@ -83,7 +83,7 @@ def find_string(text,what,timing):
     return 
 
 def distribute(freq,npulses,burstfreq,nbursts,trainfreq,ntrains,stim_start,fname_base,spine_list):
-    how_many = npulses/len(spine_list)
+    how_many = int(npulses/len(spine_list))
     overlap = npulses%len(spine_list)
     f_spines = []
     f_list = []
@@ -95,13 +95,11 @@ def distribute(freq,npulses,burstfreq,nbursts,trainfreq,ntrains,stim_start,fname
         else:
             idx = f_list.index(fname)
             f_spines.append(f_spines[idx])
-        #print f_spines[i]
     for t in range(ntrains):
         for b in range(nbursts):    
             for i in range(len(spine_list)):
                 for j in range(how_many):
                     time = stim_start + 1./freq*(i+j*len(spine_list)) + t*(1./trainfreq)+b*(1./burstfreq)
-                    #print i, time
                     f_spines[i].write(str(time)+'\n')
             for i in range(overlap):
                 time = stim_start + 1./freq*how_many*len(spine_list)+i*1./freq+ t*(1./trainfreq)+b*(1./burstfreq)
@@ -122,7 +120,7 @@ def change_in_file(fname,what,value):
     to_file = cut[0]
 
     i = 0
-    print to_file
+    print(to_file)
     while True:
         if cut[1][i] == ',' or cut[-1][i] == '\n' or cut[-1][i] == '/':
             break
@@ -140,7 +138,7 @@ if __name__ == '__main__':
     spines = find_string(params,'whichSpines','Pre')
     stim_start = find_value(params,'initSim','Pre')
     too_fast = find_value(params,'TooFast','Pre')
-    print gabaYesNo, spines, stim_start, too_fast
+    print(gabaYesNo, spines, stim_start, too_fast)
     protocols = ['InOut/Fino.g','InOut/P_K.g','InOut/Shen.g','InOut/1_PSP.g','InOut/Shindou.g','InOut/P_K_1_AP.g']
     timings = ['Pre','Post']
     paradigm_names = ['Fino','P_and_K','Shen','1_PSP','Shindou','P_and_K_1_AP']
@@ -154,7 +152,7 @@ if __name__ == '__main__':
             burstfreq = find_value(text, 'burstFreq',timing)
             ntrains = find_value(text, 'numtrains',timing)
             trainfreq = find_value(text, 'trainFreq',timing)
-            print freq, npulses, nbursts, burstfreq, ntrains, trainfreq
+            print(freq, npulses, nbursts, burstfreq, ntrains, trainfreq)
             if npulses == None:
                 npulses = 1
             
@@ -175,7 +173,7 @@ if __name__ == '__main__':
                 spine_list = ['']
                 fname_base = paradigm_names[i]+'_'+timing+'_gaba'
                 delay = find_value(read_file('MScell/SynParamsCtx.g'),'GABA','')
-                print delay
+                print(delay)
                 distribute(freq,npulses,burstfreq,nbursts,trainfreq,ntrains,stim_start+delay,fname_base,spine_list)
 
     # timing = 'Pre'

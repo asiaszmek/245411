@@ -93,7 +93,7 @@ if __name__ == '__main__':
                 ax[2].plot(1000*new_time,1000*data[beg/dt:end/dt,spines[sp][col]],'k',label = 'Ca')
                 psp = np.loadtxt(PSP_1,skiprows =1)
                 new_dt = psp[1,0]-psp[0,0]
-                print 1000*psp[beg/dt,0], 1000*psp[end/dt,0]
+                print(1000*psp[beg/dt,0], 1000*psp[end/dt,0])
                 new_time_psp = np.arange(-.1,.15,new_dt)
                 ax[2].plot(1000*new_time_psp,1000*psp[beg/new_dt:end/new_dt,4],color = colors[i/2],label = 'Ca 1 PSP')
                 ax[2].plot(0,1,'k-.',label = 'Weight')

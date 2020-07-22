@@ -1,3 +1,4 @@
+from __future__ import print_function, division
 #Python program to read in the output of STDP simulations and output
 #1. high res sample of one pairing
 #2. low res sample of entire 6 sec simulation
@@ -29,16 +30,16 @@ for suffix in filetype:
     if prninfo:
         print(filenames)
     if (len(filenames)==0):
-        print "***************Mistyped the filenames. Python found NO files:"
+        print("***************Mistyped the filenames. Python found NO files:")
     else:
         for fnum,eachfile in enumerate(filenames): 
             f = open(eachfile, 'r+')
             dataheader=f.readline()
             data=loadtxt(eachfile,skiprows=1)
             if (prninfo==1):
-                print eachfile, "\n", dataheader, "\n", data[0],data[1]
+                print(eachfile, "\n", dataheader, "\n", data[0], data[1])
             else:
-                print "header not printed"
+                print("header not printed")
             ignore=data.shape[0]%samplerate
             data=data[0:data.shape[0]-ignore]
             f.close()

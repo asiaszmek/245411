@@ -20,7 +20,7 @@ if __name__ == '__main__':
         
         if 'Fura' in x:
             mean = data[int(0.01/dt):int(0.09/dt),i+1].mean()
-            print x, (max(data[:,i+1])-mean)/mean
+            print(x, (max(data[:,i+1])-mean)/mean)
 
         if x.endswith('Ca2') or x.endswith('Ca3') or x.endswith('CaMN') or x.endswith('CaMC') or x.endswith('calbindin') or 'neck' in x:
             pass

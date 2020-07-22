@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+from __future__ import print_function, division
 # -*- coding: utf-8 -*-
 """
 Created on Mon Feb 19 16:23:04 2018

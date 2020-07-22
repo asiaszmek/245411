@@ -81,7 +81,7 @@ if __name__ == '__main__':
             else:
                 labels = labels_shindou
             for j,ending in enumerate(endings[i]):
-                print fname+ending
+                print(fname+ending)
                 f = open(fname+ending)
                 header = f.readline().split()
                 data = np.loadtxt(f)
@@ -93,7 +93,6 @@ if __name__ == '__main__':
                     head = heads_1PSP[ind]
                 else:
                     head = heads[ind][j]
-                    #print head, ind, j#, heads
 
                 time  = data[:,0]
                 for k,x in enumerate(head):

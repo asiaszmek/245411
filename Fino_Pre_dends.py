@@ -1,3 +1,4 @@
+from __future__ import print_function, division
 import numpy as np
 import make_timetables as mp
 import subprocess
@@ -93,7 +94,7 @@ if __name__ == '__main__':
      spines = mp.find_string(params,'whichSpines','Pre')
      stim_start = mp.find_value(params,'initSim','Pre')
      too_fast = mp.find_value(params,'TooFast','Pre')
-     print gabaYesNo, spines, stim_start, too_fast
+     print(gabaYesNo, spines, stim_start, too_fast)
      protocols = ['InOut/Fino.g']
      timings = ['Pre','Post']
      paradigm_names = ['Fino']
@@ -105,7 +106,7 @@ if __name__ == '__main__':
                for i, protocol in enumerate(protocols):
                     if timing == 'Pre':
                          for isi in ISIs: 
-                              print protocol
+                              print(protocol)
                               text = mp.read_file(protocol)
                               #find pulseFreq
                               freq = mp.find_value(text, 'pulseFreq',timing)
@@ -114,7 +115,7 @@ if __name__ == '__main__':
                               burstfreq = mp.find_value(text, 'burstFreq',timing)
                               ntrains = mp.find_value(text, 'numtrains',timing)
                               trainfreq = mp.find_value(text, 'trainFreq',timing)
-                              print freq, npulses, nbursts, burstfreq, ntrains, trainfreq
+                              print(freq, npulses, nbursts, burstfreq, ntrains, trainfreq)
                               if npulses == None:
                                    npulses = 1
                     
@@ -146,7 +147,7 @@ if __name__ == '__main__':
                               #ret = process.wait()
                     else:
                          
-                         print protocol
+                         print(protocol)
                          text = mp.read_file(protocol)
                          #find pulseFreq
                          freq = mp.find_value(text, 'pulseFreq',timing)
@@ -155,7 +156,7 @@ if __name__ == '__main__':
                          burstfreq = mp.find_value(text, 'burstFreq',timing)
                          ntrains = mp.find_value(text, 'numtrains',timing)
                          trainfreq = mp.find_value(text, 'trainFreq',timing)
-                         print freq, npulses, nbursts, burstfreq, ntrains, trainfreq
+                         print(freq, npulses, nbursts, burstfreq, ntrains, trainfreq)
                          if npulses == None:
                               npulses = 1
                     

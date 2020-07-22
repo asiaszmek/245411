@@ -129,7 +129,7 @@ class CaPlasSynapse(object):
         data[:,1] = self.Ca
         data[:,2] = self.weight
         np.savetxt(fname,data,header=header,comments='')
-        print 'Save data to '+fname
+        print('Save data to '+fname)
 
 def parse_header(header):
     spines = set()
@@ -170,14 +170,14 @@ def go(fnames,gain_pot,gain_dep,post_thresh_hi,post_thresh_lo,depr_len,pot_len,s
         try:
             f = open(fname)
         except IOError:
-            print 'Could not open file ', fname
+            print('Could not open file ', fname)
             #sys.exit('Could not open file ' +fname)
             continue
         header = f.readline().split()
         try:
             data = np.loadtxt(f)
         except:
-            print 'Wrong data format ', fname
+            print('Wrong data format ', fname)
             continue
             #sys.exit('Wrong data format '+fname)
         
@@ -236,7 +236,7 @@ def go(fnames,gain_pot,gain_dep,post_thresh_hi,post_thresh_lo,depr_len,pot_len,s
             data[:,1] = synapses[0].Ca
             data[:,2] = weight
             np.savetxt(f_name,data,header=header,comments='')
-            print 'Save data to '+f_name
+            print('Save data to ', f_name)
 
             
         res.append(synapses)    
@@ -323,7 +323,7 @@ if __name__ == '__main__':
     fnames = []
     for fname_base in fname_bases:
         fnames.extend(get_fnames(fname_base))
-    print fnames
+
     
     gain_pot = 1100
     gain_dep = 4500

@@ -51,7 +51,7 @@ if __name__ == '__main__':
     ax.append(fig.add_subplot(4,2,8))
     for i,fname in enumerate(flist):
         f = open(fname)
-        print fname
+        print(fname)
         header = f.readline().split()
         data = np.loadtxt(f)
         spines = cw.parse_header(header)
@@ -82,7 +82,7 @@ if __name__ == '__main__':
 
             ax[6].plot(new_time,1000*data[beg_1:end_1,spines[sp][col]],color=colors[i/2],label=labels[i/2])
             ax[i].set_ylim([0.0,lim_y_pre])
-            print titles[i/2]
+            print(titles[i/2])
             ax[i].set_ylabel(r'Ca ($\mu$M)')
 
     for i,x in enumerate(ax):

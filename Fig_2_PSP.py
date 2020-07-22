@@ -1,3 +1,5 @@
+from __future__ import print_function, division
+
 import numpy as np
 import make_timetables as mp
 import subprocess
@@ -5,13 +7,13 @@ sim_name = 'MSsim'
 
 
 text_sim_1 = '''include SimParams.g 
-  include MScell/globals.g
+include MScell/globals.g
 include MScell/Ca_constants.g
 include MScell/SynParamsCtx.g
 include MScell/spineParams.g
 include MScell/MScellSynSpines	      // access make_MS_cell 
 include InOut/add_output.g            //functions for ascii file output
-include InOut/IF.g                    //function to create pulse generator for current injection, also IF & IV curves
+include InOut/IF.g     
 include InOut/HookUp.g              
 
 setclock 0 {simdt}         
@@ -93,7 +95,7 @@ if __name__ == '__main__':
      spines = mp.find_string(params,'whichSpines','Pre')
      stim_start = mp.find_value(params,'initSim','Pre')
      too_fast = mp.find_value(params,'TooFast','Pre')
-     print gabaYesNo, spines, stim_start, too_fast
+     print(gabaYesNo, spines, stim_start, too_fast)
      protocols = ['InOut/1_PSP.g']
      timings = ['Pre']
      paradigm_names = ['1_PSP']
@@ -102,7 +104,7 @@ if __name__ == '__main__':
         
           for timing in timings:
                for i, protocol in enumerate(protocols):
-                    print protocol
+                    print(protocol)
                     text = mp.read_file(protocol)
                     #find pulseFreq
                     freq = mp.find_value(text, 'pulseFreq',timing)
@@ -111,7 +113,7 @@ if __name__ == '__main__':
                     burstfreq = mp.find_value(text, 'burstFreq',timing)
                     ntrains = mp.find_value(text, 'numtrains',timing)
                     trainfreq = mp.find_value(text, 'trainFreq',timing)
-                    print freq, npulses, nbursts, burstfreq, ntrains, trainfreq
+                    print(freq, npulses, nbursts, burstfreq, ntrains, trainfreq)
                     if npulses == None:
                          npulses = 1
                     

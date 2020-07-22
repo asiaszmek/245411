@@ -122,7 +122,7 @@ if __name__ == '__main__':
     for flist in flists:
         dat_end = np.zeros((len(flist),cols))
         for i,fname in enumerate(flist):
-            print fname
+            print(fname)
             
             dat_end[i,0] = dist(fname)
             par = fname.split('_')[0]
@@ -136,7 +136,7 @@ if __name__ == '__main__':
             try:
                 data = np.loadtxt(f)
             except:
-                print 'something wrong with the file'
+                print('something wrong with the file')
                 continue
         
             time = data[:,0]
@@ -156,7 +156,7 @@ if __name__ == '__main__':
                     stop = int(1.2/dt)
                 else:
                     stop =   int(1.9/dt)
-                print spines
+                print(spines)
 
                 new_fname = fname
                 w = 0
@@ -173,8 +173,8 @@ if __name__ == '__main__':
             new_fname += "_Pre_weights.txt"
         else:
             new_fname += "_Post_weights.txt"
-        print fname
-        print dat_end
+        print(fname)
+        print(dat_end)
         np.savetxt(new_fname,dat_end,header=h,comments='')
         plt.show()
     
