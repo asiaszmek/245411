@@ -36,7 +36,7 @@ function addGHK (chanName)
 str chanName
 
 	create ghk {chanName}GHK
-  	setfield {chanName}GHK Cout 2 // Carter & Sabatini 2004 uses 2mM, 
+	setfield {chanName}GHK Cout {external_Ca} // Carter & Sabatini 2004 uses 2mM,
 										// Wolf 5mM
   	setfield {chanName}GHK valency 2.0
   	setfield {chanName}GHK T {TEMPERATURE}

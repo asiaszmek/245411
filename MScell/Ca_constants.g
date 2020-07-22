@@ -28,7 +28,7 @@
 	float cdiqfact = 1
 
 float Ca_basal = 50e-6 //50nM
-
+float external_Ca = 2 //Carter and Sabatini 2004
 float outershell_thickness = 0.1e-6 //outermostshell thickness
 float thicknessincrease=2.0 //perhaps only 1.5, set to 1 for no increase
 float minthick=1.1*outershell_thickness	
