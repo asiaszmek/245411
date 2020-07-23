@@ -14,7 +14,7 @@ int TooFast = 30 //what is the frequency that results in depletion of synaptic v
 
 //Parameters for learning rule
 
-int     plastYesNo = 0
+int     plastYesNo = 1
 float   post_thresh_hi = .46e-3 //0.5 
 float   post_thresh_lo = 0.2e-3  //0.2
 float   dur_hi = 2.e-3 //
