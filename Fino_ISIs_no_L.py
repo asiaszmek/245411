@@ -1,30 +1,9 @@
 import numpy as np
 import make_timetables as mp
 import subprocess
+from text_files import text_sim_1, text_sim_11, text_sim_2, text_sim_3
+
 sim_name = 'MSsim'
-
-ISIs = [-.23,-.13,-.08,-.06,-.07,-0.04,-.2,-.1,-.05,-.03,-.02,-0.01,-0.005,0.005,.01,.02,.03,.05,.1,.2]
-text_sim_1 = '''include SimParams.g 
-  include MScell/globals.g
-include MScell/Ca_constants.g
-include MScell/SynParamsCtx.g
-include MScell/spineParams.g
-include MScell/MScellSynSpines	      // access make_MS_cell 
-include InOut/add_output.g            //functions for ascii file output
-include InOut/IF.g                    //function to create pulse generator for current injection, also IF & IV curves
-include InOut/HookUp.g              
-
-setclock 0 {simdt}         
-setclock 1 {simdt}
-
-str DA = "UI"
-str Location = "tertdend1_1"
-str jitter = "No"
-int jitter_int = 0
-int seedvalue = 5757538
-
-'''
-#here Protocol and Timing
 
 text_sim_2 = """
 GABAYesNo = 0
@@ -73,23 +52,10 @@ str spinefile="spine_plasticity"
 ce /
 
 """
-#here include paradigm
-#and change ISI
+
+
+ISIs = [-.23,-.13,-.08,-.06,-.07,-0.04,-.2,-.1,-.05,-.03,-.02,-0.01,-0.005,0.005,.01,.02,.03,.05,.1,.2]
 text_sim_fino = '''inject = 0.57e-9
-'''
-text_sim_3 = '''
-
-float newTrainFreq = {burstFreq}/{numbursts}
-echo {newTrainFreq}
-HookUp {prestim} {Protocol} {Timing} {stimcomp} {diskpath} {numAP} {inject} {AP_durtime} {APinterval} {ISI} {pulseFreq} {pulses} {burstFreq} {numbursts} {newTrainFreq} 1 {jitter_int}
-reset
-step 1.5 -time
-
-fileFLUSH {Vmfile} 
-fileFLUSH {Cafile} 
-fileFLUSH {Gkfile} 
-fileFLUSH {spinefile}
-fileFLUSH {somainjfile}
 '''
 if __name__ == '__main__':
      params = mp.read_file('SimParams.g')
@@ -144,7 +110,7 @@ if __name__ == '__main__':
                     fil.write(text_sim_3)
                     fil.close()
                     
-                    process = subprocess.Popen(['/home/jszmek/genesis-2.4/chemesis','-nox','-notty','-batch',sim_file])
+                    process = subprocess.Popen(['chemesis','-nox','-notty','-batch',sim_file])
                     ret = process.wait()
 
             
