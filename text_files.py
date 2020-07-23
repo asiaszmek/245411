@@ -48,13 +48,7 @@ include MScell/MScellSynSpines	      // access make_MS_cell
 include InOut/add_output.g            //functions for ascii file output
 include InOut/IF.g     
 include InOut/HookUp.g
-include InOut/SpikeMakerFunctions.g   //functions to create randomspikes and connect to synapes
-include InOut/PreSynSync.g            //functions for setting up synchronous pre-synaptic stimulation
-include InOut/UpState.g               //run upstate simulations - asynchronous synaptic stimulation
-include InOut/UpStateSTDP.g           //run upstate simulations
-include InOut/PlasStim.g              //run plasticity protocols - pattern of PSPS, no current injection
-include InOut/STDP.g                  //run STDP protocols - single PSP with current injection
-include InOut/ConstrainUp.g
+
 setclock 0 {simdt}         
 setclock 1 {outputclock}
 
