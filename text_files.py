@@ -66,7 +66,7 @@ int seedvalue = 5757538
 
 text_sim_2 = """
 
-str diskpath="SimData/"@{Protocol}@"_"@{DA}@"_"@{Timing}@"_"@{Location}@"_randseed_"@{seedvalue}@"_high_res"
+str diskpath="SimData/"@{Protocol}@"_"@{DA}@"_"@{Timing}@"_"@{Location}@"_Ca_ext"@{external_Ca}
 if ({GABAtonic})
         diskpath = {diskpath}@"_tonic_gaba"
 end
