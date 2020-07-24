@@ -267,9 +267,11 @@ function write_spine_channel(spinehead,comp_path,ascname,channel,whichfield)
         addmsg {comp_path}{spcomp1}/{channel}GHK /output/{ascname} SAVE {whichfield}
         spinehead={spinehead}@{comp_path}@{spcomp1}@"/"@{channel}@"_"@{whichfield}@" "
     elif ({exists {comp_path}{spcomp1}/{channel}})
-        echo "write_spine_channel" {channel} "in" {comp_path}{spcomp1}
-        addmsg {comp_path}{spcomp1}/{channel} /output/{ascname} SAVE {whichfield}
-        spinehead={spinehead}@{comp_path}@{spcomp1}@"/"@{channel}@"_"@{whichfield}@" "
+        if ({strcmp {channel} ""} != 0)
+            echo "write_spine_channel" {channel} "in" {comp_path}{spcomp1}
+            addmsg {comp_path}{spcomp1}/{channel} /output/{ascname} SAVE {whichfield}
+            spinehead={spinehead}@{comp_path}@{spcomp1}@"/"@{channel}@"_"@{whichfield}@" "
+        end
     else
         echo "no channel" {channel} "in" {comp_path}{spcomp1}
     end
