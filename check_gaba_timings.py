@@ -25,8 +25,6 @@ gabaYesNo = 1
 if __name__ == '__main__':
     for gabaYesNo in [0, 1]:
         for delay in [0.04]:
-            mp.change_in_file(synparams_file, 'GABAdelay = ', delay)
-
             params = mp.read_file('SimParams.g')
             spines = mp.find_string(params, 'whichSpines', 'Pre')
             stim_start = mp.find_value(params, 'initSim','Pre')
@@ -62,8 +60,6 @@ if __name__ == '__main__':
         
                         spine_list = ['']
                         fname_base = paradigm_names[i]+'_'+timing+'_gaba'
-                        dela = mp.find_value(mp.read_file('MScell/SynParamsCtx.g'),'GABAdelay =','')
-                        print(delay, dela)
                         mp.distribute(freq,npulses,burstfreq,nbursts,
                                       trainfreq,ntrains,stim_start+delay,
                                       fname_base,spine_list)
