@@ -5,13 +5,16 @@ import os
 import numpy as np
 
 
-from text_files import text_sim_1, text_sim_11, text_sim_2, text_sim_3
+from text_files import text_sim_1,  text_sim_2, text_sim_3
 import make_timetables as mp
 
 
 sim_name = 'MSsim'
+fname_info = """str diskpath="SimData/"@{Protocol}@"_"@{DA}@"_"@{Timing}@"_"@{Location}@"_Ca_ext_"@{external_Ca}\n"""
 
 locations = ['tertdend1_1','tertdend1_3','tertdend1_5','tertdend1_7','tertdend1_9','tertdend1_11','tertdend1_13']
+
+
 if __name__ == '__main__':
      params = mp.read_file('SimParams.g')
      gabaYesNo = 0#mp.find_value(params,'GABAYesNo','Pre')
@@ -53,11 +56,13 @@ if __name__ == '__main__':
 
                     sim_file = sim_name+'_'+paradigm_names[i]+'_'+timing+'_location_'+location+'_phasic.g'
                     fil = open(sim_file,'w')
+                    fil.write("""include PSim_Params_Cadye_2.g\n""")
                     fil.write(text_sim_1)
+                    fil.write("calciumdye=2\n")
                     fil.write('str Location = "'+location+'"\n')
-                    fil.write(text_sim_11)
                     fil.write('str Protocol = "'+paradigm_names[i]+'"\n')
                     fil.write('str Timing = "'+timing+'"\n')
+                    fil.write(fname_info)
                     fil.write(text_sim_2)
                     fil.write("include "+protocol+'\n')
                     

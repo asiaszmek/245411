@@ -1,5 +1,4 @@
-text_sim_1 = '''include PSim_Params.g
-
+text_sim_1 = '''
 /*Set up blocking experiments here */
 gNaFsoma_UI = {gNaFsoma_UI}
 gNaFprox_UI = {gNaFprox_UI}
@@ -53,25 +52,31 @@ setclock 0 {simdt}
 setclock 1 {outputclock}
 
 str DA = "UI"
-'''
-
-#str Location = "tertdend1_1"
-
-text_sim_11 = '''str jitter = "No"
+str jitter = "No"
 int jitter_int = 0
 int seedvalue = 5757538
-
 '''
+
+
 #here Protocol and Timing
 
 text_sim_2 = """
 
-str diskpath="SimData/"@{Protocol}@"_"@{DA}@"_"@{Timing}@"_"@{Location}@"_Ca_ext"@{external_Ca}
+
 if ({GABAtonic})
         diskpath = {diskpath}@"_tonic_gaba"
 end
 int totspine={make_MS_cell_SynSpine {neuronname} {pfile} {spinesYesNo} {DA}}
 reset
+
+if (hsolveYesNo==1)
+    create hsolve {neuronname}/solve
+    setfield  {neuronname}/solve  chanmode 1 comptmode 1
+    setfield {neuronname}/solve path  {neuronname}/##[][TYPE=compartment]
+    setmethod {neuronname}/solve 11
+        //call {neuronname}/solve SETUP - done later, immediately before simulation
+end
+
 Vmhead={add_outputVm {comps} {Vmfile} {neuronname}}
 if ({CaOut})
     if ( {calciumdye} == 0)
@@ -92,7 +97,11 @@ else
 end
 if ({GkOut})
     Gkfile="Gk_plasticity"
-    Gkhead={add_outputGk {comps} {chans} {Gkfile} {neuronname}}
+    if ({GABAYesNo})
+        Gkhead={add_outputGk {comps} {chans} {Gkfile} {neuronname} {Location}}
+    else
+        Gkhead={add_outputGk {comps} {chans} {Gkfile} {neuronname}}
+    end
 else
     Gkfile="X_plasticity"
     Gkhead=""

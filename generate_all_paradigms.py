@@ -32,7 +32,7 @@ GABAtonic = 0
 
 text_sim_2 = """
 
-str diskpath="SimData/"@{Protocol}@"_"@{DA}@"_"@{Timing}@"_"@{Location}@"_randseed_"@{seedvalue}@"_high_res"
+str diskpath="SimData/"@{Protocol}@"_"@{DA}@"_"@{Timing}@"_"@{Location}@"_Ca_ext_"@{external_Ca}
 
 int totspine={make_MS_cell_SynSpine {neuronname} {pfile} {spinesYesNo} {DA}}
 reset
@@ -138,8 +138,8 @@ if __name__ == '__main__':
                fil.write(text_sim_3)
                fil.close()
                     
-               #process = subprocess.Popen(['/home/jszmek/genesis-2.4/chemesis','-nox','-notty','-batch',sim_file])
-               #ret = process.wait()
+               process = subprocess.Popen(['chemesis','-nox','-notty','-batch',sim_file])
+               ret = process.wait()
                print(sim_file)
 
             

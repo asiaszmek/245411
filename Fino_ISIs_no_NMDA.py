@@ -1,55 +1,20 @@
-from __future__ import print_function, division
 import numpy as np
 import make_timetables as mp
 import subprocess
-from text_files import text_sim_1, text_sim_11, text_sim_2, text_sim_3
-
+from text_files import text_sim_1, text_sim_2, text_sim_3
 sim_name = 'MSsim'
 
+
 ISIs = [-.2,-.1,-.05,-.03,-.02,-0.01,-0.005,0.005,.01,.02,.03,.05,.1,.2]
+fname_info = """str diskpath = "SimData/No_NMDA_"@{Protocol}@"_"@{DA}@"_"@{Timing}@"_"@{Location}@"_Ca_ext_"@{external_Ca} """
+location = "tertdend1_1"
 #here Protocol and Timing
 
-text_sim_2 = """
+blockers = """
 GABAYesNo = 0
 NMDAgmax = 0
-
-str diskpath="SimData/No_NMDA_"@{Protocol}@"_"@{DA}@"_"@{Timing}@"_"@{Location}@"_randseed_"@{seedvalue}@"_high_res"
-
-int totspine={make_MS_cell_SynSpine {neuronname} {pfile} {spinesYesNo} {DA}}
-reset
-Vmhead={add_outputVm {comps} {Vmfile} {neuronname}}
-if ({CaOut})
-    if ( {calciumdye} == 0)
-        Cafile = "Ca_plasticity"
-    elif  ( {calciumdye} == 1)
-        Cafile = "Ca_Fura_2_plasticity"
-    elif  ( {calciumdye} == 2)
-        Cafile = "Ca_Fluo_5f_plasticity"
-    elif  ( {calciumdye} == 3)
-        Cafile = "Ca_Fluo_4_plasticity"
-    else
-        Cafile = "Ca_unnkown_dye_plasticity"
-    end
-    Cahead={add_outputCal {comps} {CaBufs} {Cafile} {neuronname}}
-else
-    Cafile="X_plasticity"
-    Cahead=""
-end
-if ({GkOut})
-    Gkfile="Gk_plasticity"
-    Gkhead={add_outputGk {comps} {chans} {Gkfile} {neuronname}}
-else
-    Gkfile="X_plasticity"
-    Gkhead=""
-end
-
-str stimcomp= {Location}
-str spinefile="spine_plasticity"
-
-
-ce /
-
 """
+
 if __name__ == '__main__':
      params = mp.read_file('SimParams.g')
      gabaYesNo = mp.find_value(params,'GABAYesNo','Pre')
@@ -92,9 +57,13 @@ if __name__ == '__main__':
                     sim_file = 'No_NMDA_'+sim_name+'_'+paradigm_names[i]+'_ISI_'+str(ISI)+'.g'
                     print(sim_file)
                     fil = open(sim_file,'w')
+                    fil.write("""include PSim_Params.g\n""")
                     fil.write(text_sim_1)
                     fil.write('str Protocol = "'+paradigm_names[i]+'"\n')
                     fil.write('str Timing = "'+timing+'"\n')
+                    fil.write('str Location = "'+location+'"\n')
+                    fil.write(blockers)
+                    fil.write(fname_info)
                     fil.write(text_sim_2)
                     fil.write("include "+protocol+'\n')
                     fil.write("ISI = "+str(ISI)+'\n')

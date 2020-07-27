@@ -1,15 +1,13 @@
-from __future__ import print_function, division
 import numpy as np
 import make_timetables as mp
 import subprocess
-from text_files import text_sim_1, text_sim_11, text_sim_2, text_sim_3
-
-
+from text_files import text_sim_1, text_sim_2, text_sim_3
 sim_name = 'MSsim'
 
 
-#here include paradigm
-#and change ISI
+fname_info = """str diskpath="SimData/"@{Protocol}@"_"@{DA}@"_"@{Timing}@"_"@{Location}@"_Ca_ext_"@{external_Ca}
+"""
+
 locations = ['tertdend1_1','tertdend1_2','tertdend1_3','tertdend1_4','tertdend1_5','tertdend1_6','tertdend1_8','tertdend1_10','tertdend1_11']
 if __name__ == '__main__':
      params = mp.read_file('SimParams.g')
@@ -55,19 +53,20 @@ if __name__ == '__main__':
                          
                               sim_file = sim_name+'_'+paradigm_names[i]+'_'+timing+'_location_'+location+'_ISI_'+isi+'_phasic.g'
                               fil = open(sim_file,'w')
+                              fil.write("""include PSim_Params.g\n""")
                               fil.write(text_sim_1)
                               fil.write('str Location = "'+location+'"\n')
-                              fil.write(text_sim_11)
                               fil.write('str Protocol = "'+paradigm_names[i]+'"\n')
                               fil.write('str Timing = "'+timing+'"\n')
                               fil.write(text_sim_2)
                               fil.write("include "+protocol+'\n')
                               fil.write("ISI = "+str(isi)+"\n")
+                              fil.write(fname_info)
                               fil.write(text_sim_3)
                               fil.close()
                     
-                              #process = subprocess.Popen(['/home/asia/genesis-2.4/chemesis','-nox','-notty','-batch',sim_file])
-                              #ret = process.wait()
+                              process = subprocess.Popen(['chemesis','-nox','-notty','-batch',sim_file])
+                              ret = process.wait()
                     else:
                          
                          print(protocol)
@@ -96,19 +95,20 @@ if __name__ == '__main__':
                          
                          sim_file = sim_name+'_'+paradigm_names[i]+'_'+timing+'_location_'+location+'_phasic.g'
                          fil = open(sim_file,'w')
+                         fil.write("""include PSim_Params.g\n""")
                          fil.write(text_sim_1)
                          fil.write('str Location = "'+location+'"\n')
-                         fil.write(text_sim_11)
                          fil.write('str Protocol = "'+paradigm_names[i]+'"\n')
                          fil.write('str Timing = "'+timing+'"\n')
+                         fil.write(fname_info)
                          fil.write(text_sim_2)
                          fil.write("include "+protocol+'\n')
-                         
+
                          fil.write(text_sim_3)
                          fil.close()
                     
-                         #process = subprocess.Popen(['chemesis','-nox','-notty','-batch',sim_file])
-                         #ret = process.wait()
+                         process = subprocess.Popen(['chemesis','-nox','-notty','-batch',sim_file])
+                         ret = process.wait()
 
             
 
