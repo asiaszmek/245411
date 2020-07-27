@@ -31,13 +31,13 @@ if __name__ == '__main__':
     fname_list = [
         
         
-            ['1_PSP_UI_Pre_tertdend1_1_randseed_5757538_high_res_no_gaba_Stim_tertdend1_1_AP_0_ISI_0.04_',
-            '1_PSP_UI_Pre_tertdend1_11_randseed_5757538_high_res_no_gaba_Stim_tertdend1_11_AP_0_ISI_0.04_'],
-            ['3_AP_UI_Pre_randseed_5757538_high_res_no_gaba_Stim_secdend11,tertdend1_1,tertdend1_2,tertdend1_3,tertdend1_4,tertdend1_5,tertdend1_6,tertdend1_7_AP_3_ISI_0.01_'],
-            ['Shindou_UI_Pre_tertdend1_1_randseed_5757538_high_res_no_gaba_Stim_tertdend1_1_AP_3_ISI_0.01_',
-            'Shindou_UI_Pre_tertdend1_3_randseed_5757538_high_res_no_gaba_Stim_tertdend1_3_AP_3_ISI_0.01_'],
-            ['Shindou_UI_Post_tertdend1_1_randseed_5757538_high_res_no_gaba_Stim_tertdend1_1_AP_3_ISI_-0.03_',
-             'Shindou_UI_Post_tertdend1_3_randseed_5757538_high_res_no_gaba_Stim_tertdend1_3_AP_3_ISI_-0.03_'
+            ['1_PSP_UI_Pre_tertdend1_1_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_0_ISI_0.04_',
+            '1_PSP_UI_Pre_tertdend1_11_Ca_ext_2_no_gaba_Stim_tertdend1_11_AP_0_ISI_0.04_'],
+            ['3_AP_UI_Pre_Ca_ext_2_no_gaba_Stim_secdend11,tertdend1_1,tertdend1_2,tertdend1_3,tertdend1_4,tertdend1_5,tertdend1_6,tertdend1_7_AP_3_ISI_0.01_'],
+            ['Shindou_UI_Pre_tertdend1_1_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_3_ISI_0.01_',
+            'Shindou_UI_Pre_tertdend1_3_Ca_ext_2_no_gaba_Stim_tertdend1_3_AP_3_ISI_0.01_'],
+            ['Shindou_UI_Post_tertdend1_1_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_3_ISI_-0.03_',
+             'Shindou_UI_Post_tertdend1_3_Ca_ext_2_no_gaba_Stim_tertdend1_3_AP_3_ISI_-0.03_'
             ]
         
     ]

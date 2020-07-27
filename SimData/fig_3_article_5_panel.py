@@ -23,7 +23,7 @@ par_dist_weight = [
     'Shen_Pre_weights.txt',
     'Shen_Post_weights.txt'
 ]
-PSP_1 = '1_PSP_UI_Pre_randseed_5757538_high_res_no_gaba_Stim_tertdend1_1_AP_0_ISI_0.01_spine_plasticity.txt'
+PSP_1 = '1_PSP_UI_Pre_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_0_ISI_0.01_spine_plasticity.txt'
 colors = ['k','darkslategrey','lightslategrey']
 labels = ['Fino et al., 2010','Pawlak \& Kerr, 2008','Shen et al., 2008']
 col = 'head_Ca1'

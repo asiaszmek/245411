@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import figure_formating as ff
 import matplotlib.image as im
 lines = ['darkgrey','k','grey','lightgrey']
-fname = 'IF_UI_Pre_randseed_5757538_high_res_IF_Vm_plasticity.txt'
+fname = 'IF_UI_Pre_Ca_ext_2_IF_Vm_plasticity.txt'
 titles = ['A. Morphology', 'B. Calcium diffusion', 'C. Electric properties']
 f = ['neuron.png', 'diff.png']
 if __name__ == '__main__':

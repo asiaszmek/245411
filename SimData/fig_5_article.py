@@ -8,80 +8,80 @@ fnames = [
     [
        
         [
-            'Fino_UI_Post_tertdend1_1_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_1_GABAtau20.08075_Stim_tertdend1_1_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_2_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_2_GABAtau20.08075_Stim_tertdend1_2_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_3_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_3_GABAtau20.08075_Stim_tertdend1_3_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_4_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_4_GABAtau20.08075_Stim_tertdend1_4_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_5_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_5_GABAtau20.08075_Stim_tertdend1_5_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_6_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_6_GABAtau20.08075_Stim_tertdend1_6_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_8_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_8_GABAtau20.08075_Stim_tertdend1_8_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_10_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_10_GABAtau20.08075_Stim_tertdend1_10_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_11_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_11_GABAtau20.08075_Stim_tertdend1_11_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_1_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_1_GABAtau2_0.0144_Stim_tertdend1_1_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_2_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_2_GABAtau2_0.0144_Stim_tertdend1_2_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_3_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_3_GABAtau2_0.0144_Stim_tertdend1_3_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_4_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_4_GABAtau2_0.0144_Stim_tertdend1_4_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_5_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_5_GABAtau2_0.0144_Stim_tertdend1_5_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_6_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_6_GABAtau2_0.0144_Stim_tertdend1_6_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_8_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_8_GABAtau2_0.0144_Stim_tertdend1_8_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_10_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_10_GABAtau2_0.0144_Stim_tertdend1_10_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_11_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_11_GABAtau2_0.0144_Stim_tertdend1_11_AP_1_ISI_-0.04_spine_plasticity.txt',
 
         ],
         [
-            'Fino_UI_Pre_tertdend1_1_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_1_GABAtau20.08075_Stim_tertdend1_1_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_2_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_2_GABAtau20.08075_Stim_tertdend1_2_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_3_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_3_GABAtau20.08075_Stim_tertdend1_3_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_4_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_4_GABAtau20.08075_Stim_tertdend1_4_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_5_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_5_GABAtau20.08075_Stim_tertdend1_5_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_6_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_6_GABAtau20.08075_Stim_tertdend1_6_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_8_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_8_GABAtau20.08075_Stim_tertdend1_8_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_10_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_10_GABAtau20.08075_Stim_tertdend1_10_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_11_randseed_5757538_high_res_tonic_gaba_gaba_delay_0.015__tertdend1_11_GABAtau20.08075_Stim_tertdend1_11_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_1_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_1_GABAtau2_0.0144_Stim_tertdend1_1_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_2_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_2_GABAtau2_0.0144_Stim_tertdend1_2_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_3_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_3_GABAtau2_0.0144_Stim_tertdend1_3_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_4_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_4_GABAtau2_0.0144_Stim_tertdend1_4_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_5_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_5_GABAtau2_0.0144_Stim_tertdend1_5_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_6_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_6_GABAtau2_0.0144_Stim_tertdend1_6_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_8_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_8_GABAtau2_0.0144_Stim_tertdend1_8_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_10_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_10_GABAtau2_0.0144_Stim_tertdend1_10_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_11_Ca_ext_2_tonic_gaba_gaba_delay_0.015__tertdend1_11_GABAtau2_0.0144_Stim_tertdend1_11_AP_1_ISI_0.04_spine_plasticity.txt',
         ]
         
     ],
     [
         [
 
-            'Fino_UI_Post_tertdend1_1_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_1_GABAtau20.08075_Stim_tertdend1_1_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_2_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_2_GABAtau20.08075_Stim_tertdend1_2_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_3_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_3_GABAtau20.08075_Stim_tertdend1_3_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_4_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_4_GABAtau20.08075_Stim_tertdend1_4_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_5_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_5_GABAtau20.08075_Stim_tertdend1_5_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_6_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_6_GABAtau20.08075_Stim_tertdend1_6_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_8_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_8_GABAtau20.08075_Stim_tertdend1_8_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_10_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_10_GABAtau20.08075_Stim_tertdend1_10_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_11_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_11_GABAtau20.08075_Stim_tertdend1_11_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_1_Ca_ext_2_gaba_delay_0.015__tertdend1_1_GABAtau2_0.0144_Stim_tertdend1_1_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_2_Ca_ext_2_gaba_delay_0.015__tertdend1_2_GABAtau2_0.0144_Stim_tertdend1_2_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_3_Ca_ext_2_gaba_delay_0.015__tertdend1_3_GABAtau2_0.0144_Stim_tertdend1_3_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_4_Ca_ext_2_gaba_delay_0.015__tertdend1_4_GABAtau2_0.0144_Stim_tertdend1_4_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_5_Ca_ext_2_gaba_delay_0.015__tertdend1_5_GABAtau2_0.0144_Stim_tertdend1_5_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_6_Ca_ext_2_gaba_delay_0.015__tertdend1_6_GABAtau2_0.0144_Stim_tertdend1_6_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_8_Ca_ext_2_gaba_delay_0.015__tertdend1_8_GABAtau2_0.0144_Stim_tertdend1_8_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_10_Ca_ext_2_gaba_delay_0.015__tertdend1_10_GABAtau2_0.0144_Stim_tertdend1_10_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_11_Ca_ext_2_gaba_delay_0.015__tertdend1_11_GABAtau2_0.0144_Stim_tertdend1_11_AP_1_ISI_-0.04_spine_plasticity.txt',
         ],
         [
             
-            'Fino_UI_Pre_tertdend1_1_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_1_GABAtau20.08075_Stim_tertdend1_1_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_2_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_2_GABAtau20.08075_Stim_tertdend1_2_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_3_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_3_GABAtau20.08075_Stim_tertdend1_3_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_4_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_4_GABAtau20.08075_Stim_tertdend1_4_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_5_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_5_GABAtau20.08075_Stim_tertdend1_5_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_6_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_6_GABAtau20.08075_Stim_tertdend1_6_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_8_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_8_GABAtau20.08075_Stim_tertdend1_8_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_10_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_10_GABAtau20.08075_Stim_tertdend1_10_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_11_randseed_5757538_high_res_gaba_delay_0.015__tertdend1_11_GABAtau20.08075_Stim_tertdend1_11_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_1_Ca_ext_2_gaba_delay_0.015__tertdend1_1_GABAtau2_0.0144_Stim_tertdend1_1_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_2_Ca_ext_2_gaba_delay_0.015__tertdend1_2_GABAtau2_0.0144_Stim_tertdend1_2_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_3_Ca_ext_2_gaba_delay_0.015__tertdend1_3_GABAtau2_0.0144_Stim_tertdend1_3_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_4_Ca_ext_2_gaba_delay_0.015__tertdend1_4_GABAtau2_0.0144_Stim_tertdend1_4_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_5_Ca_ext_2_gaba_delay_0.015__tertdend1_5_GABAtau2_0.0144_Stim_tertdend1_5_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_6_Ca_ext_2_gaba_delay_0.015__tertdend1_6_GABAtau2_0.0144_Stim_tertdend1_6_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_8_Ca_ext_2_gaba_delay_0.015__tertdend1_8_GABAtau2_0.0144_Stim_tertdend1_8_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_10_Ca_ext_2_gaba_delay_0.015__tertdend1_10_GABAtau2_0.0144_Stim_tertdend1_10_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_11_Ca_ext_2_gaba_delay_0.015__tertdend1_11_GABAtau2_0.0144_Stim_tertdend1_11_AP_1_ISI_0.04_spine_plasticity.txt',
         ]
 
         
     ],
     [  
         [
-            'Fino_UI_Post_tertdend1_1_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_1_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_2_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_2_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_3_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_3_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_4_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_4_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_5_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_5_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_6_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_6_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_8_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_8_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_10_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_10_AP_1_ISI_-0.04_spine_plasticity.txt',
-            'Fino_UI_Post_tertdend1_11_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_11_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_1_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_1_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_2_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_2_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_3_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_3_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_4_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_4_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_5_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_5_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_6_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_6_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_8_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_8_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_10_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_10_AP_1_ISI_-0.04_spine_plasticity.txt',
+            'Fino_UI_Post_tertdend1_11_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_11_AP_1_ISI_-0.04_spine_plasticity.txt',
         ],
         [
-            'Fino_UI_Pre_tertdend1_1_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_1_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_2_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_2_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_3_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_3_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_4_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_4_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_5_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_5_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_6_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_6_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_8_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_8_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_10_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_10_AP_1_ISI_0.04_spine_plasticity.txt',
-            'Fino_UI_Pre_tertdend1_11_randseed_5757538_high_res_tonic_gaba_no_gaba_Stim_tertdend1_11_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_1_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_1_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_2_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_2_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_3_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_3_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_4_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_4_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_5_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_5_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_6_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_6_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_8_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_8_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_10_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_10_AP_1_ISI_0.04_spine_plasticity.txt',
+            'Fino_UI_Pre_tertdend1_11_Ca_ext_2_tonic_gaba_no_gaba_Stim_tertdend1_11_AP_1_ISI_0.04_spine_plasticity.txt',
             
         ]
     ],
@@ -107,7 +107,7 @@ shape = [':','-.','--','-']
 
 titles = [r'A1. Duration(Ca$>\mathrm{T_{LTP}})$', r'A2. Duration(Ca$>\mathrm{T_{LTP}})$', r'B1. Duration$(\mathrm{T_{LTD}}<$Ca$<\mathrm{T_{LTP}})$', r'B2. Duration$(\mathrm{T_{LTD}}<$Ca$<\mathrm{T_{LTP}})$', r'C1. Weight', r'C2. Weight' ]
 fnams = ['Fino_Post_gaba','Fino_Pre_gaba','Fino_Post_phasic','Fino_Pre_phasic','Fino_Post_tonic','Fino_Pre_tonic']
-fnames = [['Fino_Post_gaba.txt','Fino_Pre_gaba.txt'],['Fino_Post_phasic.txt','Fino_Pre_phasic.txt'],['Fino_Post_tonic.txt','Fino_Pre_tonic.txt'],['Fino_Post_weights.txt','Fino_Pre_weights.txt']]
+fnames_post = [['Fino_Post_gaba.txt','Fino_Pre_gaba.txt'],['Fino_Post_phasic.txt','Fino_Pre_phasic.txt'],['Fino_Post_tonic.txt','Fino_Pre_tonic.txt'],['Fino_Post_weights.txt','Fino_Pre_weights.txt']]
 if __name__ == '__main__':
 
     fig = plt.figure(figsize=(6.7,8))
@@ -119,7 +119,7 @@ if __name__ == '__main__':
     # for i in range(3):
     #     twax.append(ax[i*2].twinx())
 
-    for k,fnames_list in enumerate(fnames):
+    for k, fnames_list in enumerate(fnames):
        
         for j,fname_list in  enumerate(fnames_list):
             if isinstance(fname_list,str):

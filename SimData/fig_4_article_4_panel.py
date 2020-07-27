@@ -7,12 +7,12 @@ import figure_formating as ff
 texts = ['Fino et al., 2010','Pawlak and Kerr, 2008']
 titles = ['A1. Peak Ca','A2. Peak Ca','B1. Ca above threshold', 'B2. Ca above threshold','C1. Weight ','C2. Weight']
 fnames = [
-    'Fino_UI_Pre_tertdend1_1_randseed_5757538_high_res_no_gaba_Stim_tertdend1_1_AP_1_ISIs.txt',
-    'No_L_Fino_UI_Pre_tertdend1_1_randseed_5757538_high_res_no_gaba_Stim_tertdend1_1_AP_1_ISIs.txt',
-    'No_NMDA_Fino_UI_Pre_tertdend1_1_randseed_5757538_high_res_no_gaba_Stim_tertdend1_1_AP_1_ISIs.txt',
-    'P_and_K_UI_Pre_tertdend1_1_randseed_5757538_high_res_no_gaba_Stim_tertdend1_1_AP_3_ISIs.txt',
-    'No_L_P_and_K_UI_Pre_tertdend1_1_randseed_5757538_high_res_no_gaba_Stim_tertdend1_1_AP_3_ISIs.txt',
-    'No_NMDA_P_and_K_UI_Pre_tertdend1_1_randseed_5757538_high_res_no_gaba_Stim_tertdend1_1_AP_3_ISIs.txt'
+    'Fino_UI_Pre_tertdend1_1_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_1_ISIs.txt',
+    'No_L_Fino_UI_Pre_tertdend1_1_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_1_ISIs.txt',
+    'No_NMDA_Fino_UI_Pre_tertdend1_1_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_1_ISIs.txt',
+    'P_and_K_UI_Pre_tertdend1_1_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_3_ISIs.txt',
+    'No_L_P_and_K_UI_Pre_tertdend1_1_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_3_ISIs.txt',
+    'No_NMDA_P_and_K_UI_Pre_tertdend1_1_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_3_ISIs.txt'
     ]
 th_lo = .2e-3
 th_hi = .46e-3
