@@ -4,7 +4,7 @@
 /***************************		MS Model, Version 12	***************/
 //*********** includes - functions for constructing model and outputs, and  doing simulations
 include SimParams.g                   //simulation control parameters, can be overridden in this file
-simdt=10e-6//50e-6//10e-6//5e-6//2e-5
+simdt=50e-6//10e-6//5e-6//2e-5
 //outputclock=1e-4
 spinesYesNo=1//1
 int hsolveYesNo = 1

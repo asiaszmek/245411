@@ -42,9 +42,6 @@ function set_timetable(input_name,fname_base,i,maxt,fnam, spikegen,StimComp, spi
     create spikehistory {spike_history}[{i}].history
     setfield {spike_history}[{i}].history ident_toggle 1 filename {fnam} initialize 1 leave_open 1 flush 1
     addmsg {input_name}/spikes {spike_history}[{i}].history SPIKESAVE
-    reset
-    pope
-    
     
 end
 //pass the name of the paradigm, because it is used in naming spine stimulation files
@@ -288,8 +285,7 @@ function HookUp(PreStim, paradigm, timing, StimComp, file,numAP,inj,dur,interval
     end
 
    
-    reset
     
     
- 
+ reset
 end

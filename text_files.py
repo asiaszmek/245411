@@ -42,6 +42,20 @@ nmdacdiyesno = {nmdacdiyesno}
 
 neckRA = {neckRA}
 
+//GABAtype: 0 for fast kinetics, e.g. LTSI, SPN, FSI; 1 for slow kinetics, e.g. NYP-NGF interneuron
+int GABAtype = 1
+str GABAname = "GABA"
+if ({GABAtype} == 0)
+    float GABAtau1 = 1.0e-3
+    float GABAtau2 = 14.4e-3
+    float GABAgmax = 1200e-12
+    str GABAlabel = "GABAAfast"
+elif ({GABAtype} == 1)
+    float GABAtau1 = 10e-3
+    float GABAtau2 = 83e-3
+    float GABAgmax = 1200e-12
+    str GABAlabel = "GABAAslow"
+end
  
 include MScell/MScellSynSpines	      // access make_MS_cell 
 include InOut/add_output.g            //functions for ascii file output
@@ -69,13 +83,7 @@ end
 int totspine={make_MS_cell_SynSpine {neuronname} {pfile} {spinesYesNo} {DA}}
 reset
 
-if (hsolveYesNo==1)
-    create hsolve {neuronname}/solve
-    setfield  {neuronname}/solve  chanmode 1 comptmode 1
-    setfield {neuronname}/solve path  {neuronname}/##[][TYPE=compartment]
-    setmethod {neuronname}/solve 11
-        //call {neuronname}/solve SETUP - done later, immediately before simulation
-end
+
 
 Vmhead={add_outputVm {comps} {Vmfile} {neuronname}}
 if ({CaOut})
@@ -120,8 +128,17 @@ text_sim_3 = '''
 
 float newTrainFreq = {burstFreq}/{numbursts}
 echo {newTrainFreq}
+
 HookUp {prestim} {Protocol} {Timing} {stimcomp} {diskpath} {numAP} {inject} {AP_durtime} {APinterval} {ISI} {pulseFreq} {pulses} {burstFreq} {numbursts} {newTrainFreq} 1 {jitter_int}
 reset
+
+if (hsolveYesNo==1)
+    create hsolve {neuronname}/solve
+    setfield  {neuronname}/solve  chanmode 1 comptmode 1
+    setfield {neuronname}/solve path  {neuronname}/##[][TYPE=compartment]
+    setmethod {neuronname}/solve 11
+        //call {neuronname}/solve SETUP - done later, immediately before simulation
+end
 
 if (hsolveYesNo==1)
     call {neuronname}/solve SETUP
