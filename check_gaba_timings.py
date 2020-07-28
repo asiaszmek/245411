@@ -80,6 +80,7 @@ if __name__ == '__main__':
                             fil.write("""include PSim_Params.g\n""")
                             fil.write(text_sim_1)
                             fil.write("""GABAtonic = %d\n""" % tonicGABA)
+                            fil.write("""GABAtau2 = %f\n""" % 80.75e-3)
                             
                             fil.write('str Protocol = "%s"\n' % paradigm_names[i])
                             fil.write('str Timing = "%s"\n' % timing)
