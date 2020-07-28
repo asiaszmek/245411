@@ -59,6 +59,8 @@ if __name__ == '__main__':
                     fil = open(sim_file,'w')
                     fil.write("""include PSim_Params.g\n""")
                     fil.write(text_sim_1)
+                    if paradigm_names[i] == 'P_and_K':
+                         fil.write("external_Ca = 2.5\n")
                     fil.write('str Protocol = "'+paradigm_names[i]+'"\n')
                     fil.write('str Timing = "'+timing+'"\n')
                     fil.write('str Location = "'+location+'"\n')

@@ -4,9 +4,9 @@ import numpy as np
 fname_bases = ['Fino_UI_Pre_tertdend1_1_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_1_ISI',
                'No_L_Fino_UI_Pre_tertdend1_1_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_1_ISI',
                'No_NMDA_Fino_UI_Pre_tertdend1_1_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_1_ISI',
-               'P_and_K_UI_Pre_tertdend1_1_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_3_ISI',
+               'P_and_K_UI_Pre_tertdend1_1_Ca_ext_2.5_no_gaba_Stim_tertdend1_1_AP_3_ISI',
                'No_L_P_and_K_UI_Pre_tertdend1_1_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_3_ISI',
-               'No_NMDA_P_and_K_UI_Pre_tertdend1_1_Ca_ext_2_no_gaba_Stim_tertdend1_1_AP_3_ISI'
+               'No_NMDA_P_and_K_UI_Pre_tertdend1_1_Ca_ext_2.5_no_gaba_Stim_tertdend1_1_AP_3_ISI'
 ]
 
 th_lo = 0.2e-3
