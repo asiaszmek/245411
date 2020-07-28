@@ -125,7 +125,7 @@ function HookUp(PreStim, paradigm, timing, StimComp, file,numAP,inj,dur,interval
                 whereStim = {substring {bufStrTmp} 0 {bufpos-1}}
                 bufStrTmp = {substring {bufStrTmp} {bufpos+1}}
             end
-            filenam = {filenam}@"_"@whereStim@"_"@"GABAtau2"@{GABAtau2}@"_" 
+            filenam = {filenam}@"_"@whereStim@"_"@"GABAtau2_"@{GABAtau2}@"_" 
 
             set_timetable {GABA_input} {gaba_file} {i} {maxt} {filenam} {spikegen} {whereStim} "GABASynTimes"
                     
