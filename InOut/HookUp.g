@@ -10,7 +10,7 @@
 and also repeating the pairings.  BUT, these will mess up the alignment of the 
 pre-synaptic stim and the post-synaptic depol.  So, fix the pulse generators when you uncomment them */
 
-function connect_synapse(input,spikegen,stimname,name)
+function connect_synapse_spikegen(input,spikegen,stimname,name)
     str input,spikegen,stimname,name
     if ({exists {stimname}/{name}})
         addmsg {input}/{spikegen}  {stimname}/{name} SPIKE 
@@ -131,7 +131,7 @@ function HookUp(PreStim, paradigm, timing, StimComp, file,numAP,inj,dur,interval
                     
 
             str stimname = {neuronname}@"/"@{whereStim}
-            connect_synapse {GABA_input}[{i}] {spikegen} {stimname} {GABAname} 
+            connect_synapse_spikegen {GABA_input}[{i}] {spikegen} {stimname} {GABAname} 
             i = i + 1
         end
     else
@@ -196,8 +196,8 @@ function HookUp(PreStim, paradigm, timing, StimComp, file,numAP,inj,dur,interval
                 
                     stimname = {neuronname}@"/"@{whichSegment}@"/spine_"@{whichSpine}@"/"@{spcomp1}
                     
-                    connect_synapse {input_name}[{i}] {spikegen} {stimname} {NMDAname}
-                    connect_synapse {input_name}[{i}] {spikegen} {stimname} {AMPAname}
+                    connect_synapse_spikegen {input_name}[{i}] {spikegen} {stimname} {NMDAname}
+                    connect_synapse_spikegen {input_name}[{i}] {spikegen} {stimname} {AMPAname}
                     i = {i+1}
                 end
             end
@@ -207,8 +207,8 @@ function HookUp(PreStim, paradigm, timing, StimComp, file,numAP,inj,dur,interval
         str stimname={StimComp}
         create timetable {input_name}
         set_timetable {input_name} {numtrains}/{trainFreq} {filename}
-        connect_synapse {input_name} {NMDAname} {neuronname} {stimname}
-        connect_synapse {input_name} {AMPAname} {neuronname} {stimname}
+        connect_synapse_spikegen {input_name} {NMDAname} {neuronname} {stimname}
+        connect_synapse_spikegen {input_name} {AMPAname} {neuronname} {stimname}
 
     end
 */       
