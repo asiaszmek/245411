@@ -49,7 +49,7 @@ include InOut/IF.g
 include InOut/HookUp.g
 
 setclock 0 {simdt}         
-setclock 1 {outputclock}
+setclock 1 {simdt}
 
 str DA = "UI"
 str jitter = "No"
@@ -121,6 +121,12 @@ text_sim_3 = '''
 float newTrainFreq = {burstFreq}/{numbursts}
 echo {newTrainFreq}
 HookUp {prestim} {Protocol} {Timing} {stimcomp} {diskpath} {numAP} {inject} {AP_durtime} {APinterval} {ISI} {pulseFreq} {pulses} {burstFreq} {numbursts} {newTrainFreq} 1 {jitter_int}
+reset
+
+if (hsolveYesNo==1)
+    call {neuronname}/solve SETUP
+end
+reset
 reset
 step 1.5 -time
 
